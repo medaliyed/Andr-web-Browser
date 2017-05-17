@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.henrygerrard.navdal.MainActivity">
+
+<LinearLayout
+
+    android:weightSum="1"
+    android:layout_weight="0.10"
+    android:id="@+id/urlgo"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <EditText
+        android:id="@+id/et_url"
+        android:layout_weight="0.95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:id="@+id/bntgo"
+        android:layout_weight="0.05"
+        android:text="GO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+        <WebView
+            android:layout_weight="0.80"
+            android:id="@+id/wv_br"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </WebView>
+    <ProgressBar
+        android:id="@+id/pgsbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_weight="0.10"
+        android:orientation="horizontal"
+        android:id="@+id/llbtns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="0.25"
+            android:id="@+id/frd"
+            android:text="Forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:layout_weight="0.25"
+            android:id="@+id/bkw"
+            android:text="Backward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:layout_weight="0.25"
+            android:id="@+id/reload"
+            android:text="Reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:layout_weight="0.25"
+            android:id="@+id/clr"
+            android:text="Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
